@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASA APOD App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>NASA Astronomy Picture of the Day</h1>
+    <div class="search">
+      <label for="searchDate">Enter a date (YYYY-MM-DD):</label>
+      <input type="text" id="searchDate" placeholder="YYYY-MM-DD">
+      <button onclick="searchAPODByDate()">Search</button>
+      <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
+    <div class="apod">
+      <img id="apodImage" src="" alt="NASA APOD">
+      <h2 id="apodTitle"></h2>
+      <p id="apodDate"></p>
+      <p id="apodExplanation"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
